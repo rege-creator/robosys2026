@@ -7,6 +7,6 @@ for line in sys.stdin:
     try:
         x += int(line)
     except ValueError:
-        x += float(line)
+        x += tonum(line.rstrip())
 
 print(x)
